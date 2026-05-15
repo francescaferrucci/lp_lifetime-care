@@ -489,31 +489,33 @@
     
     .final-cta {
       position: relative;
-      min-height: 880px;
+      min-height: 900px;
       display: flex;
       align-items: center;
       overflow: hidden;
       background:
         linear-gradient(
           90deg,
-          rgba(18, 22, 24, 0.78) 0%,
-          rgba(18, 22, 24, 0.62) 32%,
-          rgba(18, 22, 24, 0.18) 62%,
-          rgba(18, 22, 24, 0.05) 100%
+          rgba(12, 16, 18, 0.82) 0%,
+          rgba(12, 16, 18, 0.68) 24%,
+          rgba(12, 16, 18, 0.36) 48%,
+          rgba(12, 16, 18, 0.10) 72%,
+          rgba(12, 16, 18, 0.02) 100%
         ),
-        url('HPH_BrandAnthem_24.png') center center / cover no-repeat;
+        url('HPH_BrandAnthem_24.png') center right / cover no-repeat;
     }
-    
+
     .final-cta .container {
       position: relative;
       z-index: 2;
+      width: 100%;
     }
     
     .cta-panel {
+      max-width: 620px;
+      padding: 0;
       background: transparent;
       box-shadow: none;
-      padding: 0;
-      max-width: 540px;
     }
     
     .cta-panel::before {
@@ -522,21 +524,29 @@
     
     .final-cta .section-kicker {
       color: rgba(255,255,255,0.72);
+      margin-bottom: 18px;
     }
     
     .cta-panel h2 {
-      font-size: clamp(54px, 7vw, 92px);
+      font-size: clamp(58px, 7vw, 96px);
       line-height: 0.92;
-      margin: 0 0 22px;
+      margin: 0 0 24px;
       color: var(--white);
-      max-width: 520px;
+      max-width: 620px;
     }
     
     .cta-panel p {
-      max-width: 460px;
-      margin: 0 0 30px;
-      color: rgba(255,255,255,0.82);
-      font-size: 20px;
+      max-width: 540px;
+      margin: 0 0 34px;
+      color: rgba(255,255,255,0.84);
+      font-size: 21px;
+      line-height: 1.5;
+    }
+    
+    .final-cta .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
     }
     
     .final-cta .btn-primary {
@@ -549,8 +559,9 @@
     .final-cta .btn-secondary {
       border: 1px solid rgba(255,255,255,0.22);
       background: rgba(255,255,255,0.08);
+      color: var(--white);
+      backdrop-filter: blur(12px);
     }
-
     footer {
       padding: 28px 24px 52px;
       background: var(--cream-2);
@@ -814,27 +825,34 @@
       </div>
     </section>
 
+   n replace your current final CTA HTML section with this:
+
     <section class="final-cta">
       <div class="container">
         <div class="cta-panel">
-          <div class="section-kicker">Start the Conversation</div>
+    
+          <div class="section-kicker">
+            Start the Conversation
+          </div>
     
           <h2>
-            Your<br>
-            Partner in<br>
-            Pet<br>
-            Parenthood.
+            Ready for care that keeps moving with life?
           </h2>
     
           <p>
-            At Hannah, we’re more than a vet hospital — we’re your partner in keeping your Pet happy, healthy, and by your side for years to come.
+            Tell us about your Pet and our team will help you understand whether Hannah Membership is the right fit.
           </p>
     
           <div class="hero-actions">
             <a href="#join" class="btn btn-primary">
-              Learn More
+              Request Membership Info
+            </a>
+    
+            <a href="tel:15039055200" class="btn btn-secondary">
+              Call (503) 905-5200
             </a>
           </div>
+    
         </div>
       </div>
     </section>
