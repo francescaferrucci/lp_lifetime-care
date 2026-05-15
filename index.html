@@ -486,8 +486,8 @@
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
-    
-    .final-cta {
+  
+      .final-cta {
       position: relative;
       min-height: 820px;
       display: flex;
@@ -496,13 +496,22 @@
       background:
         linear-gradient(
           90deg,
-          rgba(8, 12, 14, 0.96) 0%,
-          rgba(8, 12, 14, 0.88) 28%,
-          rgba(8, 12, 14, 0.60) 48%,
-          rgba(8, 12, 14, 0.22) 68%,
+          rgba(8, 12, 14, 1) 0%,
+          rgba(8, 12, 14, 0.96) 24%,
+          rgba(8, 12, 14, 0.78) 42%,
+          rgba(8, 12, 14, 0.42) 58%,
+          rgba(8, 12, 14, 0.12) 78%,
           rgba(8, 12, 14, 0.02) 100%
         ),
-        url('HPH_BrandAnthem_24.png') right center / 78% auto no-repeat;
+        radial-gradient(
+          circle at 70% 50%,
+          rgba(8, 12, 14, 0) 0%,
+          rgba(8, 12, 14, 0.10) 38%,
+          rgba(8, 12, 14, 0.45) 72%,
+          rgba(8, 12, 14, 0.75) 100%
+        ),
+        url('HPH_BrandAnthem_24.png') right center / 78% auto no-repeat,
+        #080c0e;
     }
     .final-cta .container {
       position: relative;
