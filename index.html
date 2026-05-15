@@ -377,49 +377,60 @@
     .stat-card span { color: rgba(37,33,29,0.72); }
 
     .services {
-      background: var(--charcoal);
+      background: #1f3b54;
       color: var(--cream-2);
       position: relative;
     }
-
-    .services .section-kicker { color: var(--gold); }
-    .services .section-lede { color: rgba(255,250,242,0.72); }
-
+    
+    .services .section-kicker { 
+      color: var(--hannah-blue); 
+    }
+    
+    .services .section-title {
+      color: var(--white);
+    }
+    
+    .services .section-lede { 
+      color: rgba(255,250,242,0.78); 
+    }
+    
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
       margin-top: 42px;
     }
-
+    
     .service-card {
-      background: rgba(255,255,255,0.07);
-      border-color: rgba(255,255,255,0.12);
+      background: rgba(81,181,224,0.18);
+      border: 1px solid rgba(81,181,224,0.28);
+      backdrop-filter: blur(12px);
       box-shadow: none;
       padding: 26px;
       color: var(--cream-2);
     }
-
+    
     .icon {
       width: 46px;
       height: 46px;
-      border-radius: 16px;
+      border-radius: 12px;
       display: grid;
       place-items: center;
       background: rgba(255,255,255,0.12);
       margin-bottom: 20px;
       font-size: 24px;
     }
-
+    
     .service-card h3 {
       font-size: 28px;
       margin: 0 0 16px;
+      color: var(--white);
     }
-
+    
     .service-card ul {
       margin: 0;
       padding-left: 18px;
-      color: rgba(255,250,242,0.76);
+      color: rgba(255,250,242,0.82);
     }
 
     .moments {
